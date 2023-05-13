@@ -1,0 +1,94 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "ScreenCCT",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_480x272_puzzle.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": 286,
+            "Width": 480,
+            "Height": 34,
+            "RelativeFilename": "__generated\\alternate_theme_images_bars_480x272_top_action.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 120,
+            "Y": 16,
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "__generated\\alternate_theme_images_previews_preview13.png"
+          }
+        ],
+        "Interactions": [],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 480,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "ScreenCCT",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F407/417",
+    "Toolchain": "MDK-ARM V5.32",
+    "Platform": "m4",
+    "ProjectFile": "../LY1200_APP_master.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.21.1"
+}
